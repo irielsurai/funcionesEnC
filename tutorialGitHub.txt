@@ -5,3 +5,16 @@ COMANDOS DE GIT
 3ro Agregar los archivos nuevos o modigicados; git add . (agrega todo; si pongo: git add .txt  agrega solo los textos)
 4to Hacer commit para sacar una foto instantanea: como seguridad git commit -m "mensaje del commit"
 5to Subir todos los commit a github: git push 
+6to Para actualizar su repositorio local (en la compu) git pull.
+
+
+
+git clone
+
+git status
+
+git add .
+git commit -m "mensaje del commit"
+git push 
+
+git pull
