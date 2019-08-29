@@ -6,17 +6,37 @@ int sumar(int numero1,int numero2);
 int restar(int numero1,int numero2);
 int multiplicar(int numero1,int numero2);
 int dividir(int numero1,int numero2);
-
+void mostrar (float);
+int pedir ();
 
 int main()
 {
-    calcular(3,7,1);
-    calcular(10,2,4);
-    calcular (2,3,3);
-    calcular (1,1,2);
+    int parametro1;
+    int parametro2;
+    int parametro3;
+    printf ("Ingrese tipo de operacion: ");
+    parametro3 = pedir();
+    //PARA EL PARAMETRO 3
+    while (parametro3 < 1 || parametro3 > 4)
+    {
+        printf("\n  No es un operador válido eliga uno de 1 al 4: \n \n ");
+        parametro3 = pedir();
+    }
+    printf ("Ingrese primer numero: ");
+    parametro1 = pedir();
+    printf ("Ingrese segundo numero: ");
+    parametro2 = pedir();
+
+    calcular(parametro1,parametro2,parametro3);
     return 0;
 }
 
+int pedir ()
+{
+    int pedido;
+    scanf("%d", &pedido);
+    return (pedido);
+}
 
 
 void calcular (int numUno, int numDos, int operacion)
@@ -37,8 +57,14 @@ void calcular (int numUno, int numDos, int operacion)
             resultado = dividir (numUno, numDos);
             break;
     }
-    printf("La cuenta da: %f \n", resultado);
+    mostrar (resultado);
 }
+
+void mostrar (float loQueDigan)
+{
+    printf("La cuenta da: %f \n", loQueDigan);
+}
+
 
 int sumar(int numero1, int numero2)
 {
@@ -106,5 +132,14 @@ void saludar()  //haciendo la función
 {
     printf("Hello world!\n");
 }
+
+
+
+PARA EL PARAMETRO 3
+while (parametro3 < 1 || parametro3 > 4)
+    {
+        printf("\n  No es un operador válido eliga uno de 1 al 4: \n \n ");
+        scanf("%d", &parametro3);
+    }
 
 */
