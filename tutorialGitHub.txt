@@ -1,0 +1,7 @@
+COMANDOS DE GIT
+
+1ro Tener un repositorio creado. Que tenga un archivo con READ ME (Permiso para clonar?)
+2do Clonarlo:	git clone
+3ro Agregar los archivos nuevos o modigicados; git add . (agrega todo; si pongo: git add .txt  agrega solo los textos)
+4to Hacer commit para sacar una foto instantanea: como seguridad git commit -m "mensaje del commit"
+5to Subir todos los commit a github: git push 
